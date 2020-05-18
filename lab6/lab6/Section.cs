@@ -4,7 +4,11 @@ using System.Text;
 
 namespace lab6
 {
-    class Section
+    [Serializable]
+    class Section : Division
     {
+        public Section(string name, Person manager, List<Person> employees) : base(name, manager, employees)
+        {
+        }
     }
 }

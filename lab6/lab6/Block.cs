@@ -4,7 +4,11 @@ using System.Text;
 
 namespace lab6
 {
-    class Block
+    [Serializable]
+    class Block : Division
     {
+        public Block(string name,Person manager, List<Person> employees) : base(name,manager,employees)
+        {
+        }
     }
 }
